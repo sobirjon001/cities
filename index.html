@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cities</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Lets calculate where you going to be in specific time at your trip.</h1>
+        </div>
+        <div class="form">
+            <label for="cityname">City Name</label>
+            <input type="text" id="cityname" required>
+            <label for="prcityname">Previous City Name</label>
+            <input type="text" id="prcityname" required disabled>
+            <label for="distance" id="dist-label">Distance from </label>
+            <input type="text" id="distance" required>
+            <label for="layovertime">Layover time</label>
+            <input type="text" id="layovertime" required>
+            <button onclick="addData()">Next</button>
+        </div>
+        <div class="map">
+            <div class="city-container" id="start">
+                <p class="cityname" id="city-1">Start</p>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="table">
+            
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
